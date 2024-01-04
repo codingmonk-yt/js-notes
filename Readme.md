@@ -48,5 +48,76 @@ JavaScript stands out due to:
 - **Universal Browser Support:** 
   - Supported by all major browsers and enabled by default.
 
+----------------------
+
+# Hello, world!
+
+This tutorial focuses on core JavaScript, the language itself.
+
+## Running JavaScript in the Browser
+
+To execute JavaScript, the browser serves as a suitable environment. However, if you plan to work in another environment like Node.js, we'll minimize browser-specific commands like 'alert'.
+
+### Attaching a Script to a Webpage
+
+JavaScript programs can be inserted within HTML using the `<script>` tag:
+
+```html
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <p>Before the script...</p>
+    <script>
+      alert('Hello, world!');
+    </script>
+    <p>...After the script.</p>
+  </body>
+</html>
+```
+
+The JavaScript code within `<script>` tags runs when the browser processes the tag.
+
+## Modern Markup
+
+The `<script>` tag has attributes that were used in old code:
+
+### The `type` Attribute: `<script type=...>`
+
+In older HTML standards, scripts required a `type` attribute like `type="text/javascript"`. However, it's optional now and can even be used for JavaScript modules.
+
+### The `language` Attribute: `<script language=...>`
+
+This attribute indicated the script's language but is no longer necessary as JavaScript is the default language.
+
+## External Scripts
+
+For larger JavaScript code, placing it in separate files is recommended. Use the `src` attribute to link these files to HTML:
+
+```html
+<script src="/path/to/script.js"></script>
+```
+
+Absolute or relative paths can be used to specify the script file's location.
+
+### Attaching Multiple Scripts
+
+To link multiple scripts, use multiple `<script>` tags:
+
+```html
+<script src="/js/script1.js"></script>
+<script src="/js/script2.js"></script>
+<!-- ... -->
+```
+
+### External Library Example
+
+Linking to a JavaScript library from a Content Delivery Network (CDN):
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+```
+
+
+
 
 
